@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run Champions Arena",
+      "request": "launch",
+      "preLaunchTask": "Build Student Classes",
+      "mainClass": "Launcher",
+      "args": ["console"],
+      "cwd": "${workspaceFolder}/dist",
+      "classPaths": [
+        "${workspaceFolder}/dist",
+        "${workspaceFolder}/champions-arena.jar"
+      ]
+    }
+  ]
+}

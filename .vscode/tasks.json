@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Student Classes",
+      "type": "shell",
+      "command": "javac",
+      "args": [
+        "--release", "17",
+        "-cp", "champions-arena.jar",
+        "-d", "dist",
+        "${workspaceFolder}/src/*.java"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$javac"]
+    }
+  ]
+}
