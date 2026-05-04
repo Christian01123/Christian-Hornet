@@ -6,7 +6,7 @@
       "type": "shell",
       "command": "javac",
       "args": [
-        "--release", "17",
+        "--release", "11",
         "-cp", "champions-arena.jar",
         "-d", "dist",
         "${workspaceFolder}/src/*.java"
