@@ -14,6 +14,18 @@ public class MyChampion extends Champion {
 
     @Override
     public List<Action> getActions() {
-        return super.getActions();
+        List<Action> actions = new ArrayList<>(super.getActions());  // Include any defaults
+        //actions.add(new Headbutt());  // Add your implemented action
+        // Add more as needed
+        return actions;
+    }
+
+    @Override
+    public Loadout getLoadout() {
+        Loadout loadout = new Loadout();  // Start with empty loadout
+        loadout.swapRelic(new EmberCrystal());     // Equip Ember Crystal for +2 attack
+        loadout.swapTactic(new LastLight());       // Equip Last Light for healing boost
+        loadout.swapPocketedGambit(new AdrenalSurge());  // Equip Adrenal Surge gambit
+        return loadout;
     }
 }
