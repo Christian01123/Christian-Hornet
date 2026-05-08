@@ -7,16 +7,18 @@ import java.util.ArrayList;
 public class MyChampion extends Champion {
     public static final String NAME = "Hornet";
 
+
     public MyChampion() {
         // Create a champion with an attack of 8, a defense of 2, and max health of 70
         super("Hornet", 8, 2, 70);
+        MyChampion hornet = new MyChampion();
+        hornet.getArsenal();
     }
 
     @Override
     public List<Action> getActions() {
         List<Action> actions = new ArrayList<>(super.getActions());  // Include any defaults
-        //actions.add(new Headbutt());  // Add your implemented action
-        // Add more as needed
+        actions.add(new NeedleStrike());  // Add your custom action
         return actions;
     }
 
