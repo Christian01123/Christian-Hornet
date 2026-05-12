@@ -11,8 +11,6 @@ public class MyChampion extends Champion {
     public MyChampion() {
         // Create a champion with an attack of 8, a defense of 2, and max health of 70
         super("Hornet", 8, 2, 70);
-        MyChampion hornet = new MyChampion();
-        hornet.getArsenal();
     }
 
     @Override
