@@ -16,16 +16,17 @@ public class MyChampion extends Champion {
     @Override
     public List<Action> getActions() {
         List<Action> actions = new ArrayList<>(super.getActions());  // Include any defaults
-        actions.add(new NeedleStrike());  // Add your custom action
+        actions.add(new NeedleStrike());
+        actions.add(new Adino());
         return actions;
     }
 
     @Override
     public Loadout getLoadout() {
         Loadout loadout = new Loadout();  // Start with empty loadout
-        loadout.swapRelic(new EmberCrystal());     // Equip Ember Crystal for +2 attack
-        loadout.swapTactic(new LastLight());       // Equip Last Light for healing boost
-        loadout.swapPocketedGambit(new Silkheart());  // Equip Adrenal Surge gambit
+        loadout.swapRelic(new Shaw());     // Equip Shaw for +10 attack
+        loadout.swapTactic(new SilkCocoon());       // Equip Silk Cocoon for healing boost
+        loadout.swapPocketedGambit(new Silkheart());  // Equip Silkheart gambit
         return loadout;
     }
 }
